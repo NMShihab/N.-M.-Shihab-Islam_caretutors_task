@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Light</title>
+</head>
+<body>
+    <div>
+        <h1 id='instruction'> To On Click the Light</h1>
+        <img id="bulbImage" onclick="toggleLight()" src="./off.png" alt="">
+
+    </div>
+</body>
+    <script>
+        function toggleLight() {
+            let image = document.getElementById('bulbImage');
+            let text = document.getElementById('instruction')
+
+            if (image.src.match("off")) {
+                image.src = "on.png";
+                text.innerHTML = "To Off Click the Light"
+                
+            } else {
+                image.src = "off.png";
+                text.innerHTML = "To On Click the Light"
+            }
+        }
+    </script>
+
+</html>

@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+}
